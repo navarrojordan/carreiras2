@@ -11,9 +11,9 @@
             <h1 class="vg"> Comercial </h1>
 
         <div class="card-content">
-            <li><a href="/Jobs">Analista Comercial</a></li>
-            <li><a href="/">Assistente de vendas</a></li>
-            <li><a href="/">Consulor de vendas externo</a></li>
+            <li><a href="/Jobs">Analista Comercial</a></li>   <p class="cidade"> Jaraguá do Sul </p>
+            <li><a href="/">Assistente de vendas</a></li> <p class="cidade"> São Paulo </p>
+            <li><a href="/">Consulor de vendas externo</a></li> <p class="cidade"> Rio de Janeiro </p>
         </div>
 
       </div>
@@ -24,9 +24,9 @@
           <h1 class="vg"> Engenharia </h1>
 
         <div class="card-content">
-            <li><a href="/">Engenheiro de Dados</a></li>
-            <li><a href="/">Desenvolvedor Web</a></li>
-            <li><a href="/">Analista de Sistemas</a></li>
+            <li><a href="/">Engenheiro de Dados</a></li> <p class="cidade"> Jaraguá do Sul </p>
+            <li><a href="/">Desenvolvedor Web</a></li> <p class="cidade"> São Paulo </p>
+            <li><a href="/">Analista de Sistemas</a></li> <p class="cidade"> Florianópolis </p>
 
         </div>
 
@@ -38,9 +38,9 @@
           <h1 class="vg"> Marketing </h1>
 
         <div class="card-content">
-            <li><a href="/">Analista de Marketing</a></li>
-            <li><a href="/">Designer</a></li>
-            <li><a href="/">Social Media</a></li>
+            <li><a href="/">Analista de Marketing</a></li> <p class="cidade"> Jaraguá/ Remoto </p>
+            <li><a href="/">Designer</a></li> <p class="cidade"> São Paulo </p>
+            <li><a href="/">Social Media</a></li><p class="cidade"> Jaraguá do Sul </p>
         </div>
 
       </div>
@@ -130,5 +130,9 @@ padding: 50px;
 }
 .vg{
   font-family: Arial, Helvetica, sans-serif;
+}
+.cidade{
+text-align: right;
+font-family: Arial, Helvetica, sans-serif;
 }
 </style>
