@@ -11,9 +11,6 @@
         </template>
         <template #start>
             <div class="navbar">
-            <!-- <b-navbar-item href="#">
-                Quem somos
-            </b-navbar-item> -->
             <b-navbar-item href="Jobs">
                 Carreiras
             </b-navbar-item>

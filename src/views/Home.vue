@@ -18,11 +18,11 @@
         </b-field>
                     <br>
                     
-    <b-field class="file is-info-light" :class="{'has-name': !!file}">
+    <b-field class="file is-dark" :class="{'has-name': !!file}">
         <b-upload v-model="file" class="file-label">
             <span class="file-cta">
                 <b-icon class="file-icon" icon="upload"></b-icon>
-                <span class="file-label"> curriculo</span>
+                <span class="file-label"> Upload</span>
             </span>
             <span class="file-name" v-if="file">
                 {{ file.name }}
@@ -55,3 +55,10 @@ export default {
 };
 
 </script>
+
+<style >
+.file-label{
+  font-family: Arial, Helvetica;
+}
+
+</style>
