@@ -78,7 +78,7 @@ export default {
     /* flex-wrap: wrap; */
 }
 .register-photo{
-    background-image: url('../assets/register.png');
+    background-image: url('../assets/register4.png');
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
