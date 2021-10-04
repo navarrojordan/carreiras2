@@ -13,12 +13,6 @@
             placeholder="Escreva seu nome">
             </b-input>
         </b-field>
-        <!-- <b-field label="Sobrenome">
-            <b-input v-model="user.lastName"
-            type="Sobrenome"
-            placeholder="Escreva seu Sobrenome">
-            </b-input>
-        </b-field> -->
 
         <b-field label="Crie sua senha">
             <b-input v-model="user.password"
@@ -36,7 +30,7 @@
         </label>
 
         <div class="button-forms">
-        <button type="submit" class="button is-info"> Criar Conta </button>
+        <button type="submit" class="button is-dark"> Criar Conta </button>
         <div class="columns">
         <div class="column login-footer">
         <!-- <p> Não tenho conta, quero me registrar.<a href="/login">Entrar agora.</a></p> -->
@@ -100,7 +94,7 @@ export default {
     padding: 15px;
 }
 .button{
-    margin-left: 30px;
+    margin-left: 1px;
 }
 .register-form h1{
     text-align: center;

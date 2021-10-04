@@ -1,12 +1,8 @@
 <template>
     <section class="main">
-      <img src="..\assets\inse2.png" >
-
-     <apresent/>
-     <apresent2/>
-        <br>      <br>
-        <div class="bem-vindo">
-            <!-- <h1> Nossas Vagas </h1> -->
+      
+      <img src="..\assets\inse2.png" ><br><br>
+              <div class="bem-vindo">
 
             <div class="media">
               <div class="media-left">
@@ -32,7 +28,11 @@
                 @select="option => selected = option">
                 <template #empty>No results found</template>
             </b-autocomplete>
-         <br>
+      
+     <apresent/>
+     <apresent2/>
+        <br>      
+         
     </section>
    
 </template>

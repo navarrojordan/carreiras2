@@ -4,8 +4,6 @@
      <apresent2/>
         <br>      <br>
         <div class="bem-vindo">
-            <!-- <h1> Nossas Vagas </h1> -->
-
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
@@ -45,12 +43,11 @@ export default {
             return {
                 data: [
                     'Comercial',
-                    'Banco de dados',
                     'Marketing',
                     'Vendas',
                     'Financeiro',
                     'Recursos Humanos',
-                    'Controladoria',
+                   
                 ],
                 name: '',
                 selected: null

@@ -13,8 +13,7 @@
 
         <div class="description">
             <p class="desc">
-                <span style="font-family: Raleway, sans-serif; font-size: 10pt;" data-mce-style="font-family: Raleway, sans-serif; font-size: 10pt;"><strong><span style="font-size: 11pt;" data-mce-style="font-size: 11pt;"><span style="font-size: 10pt;" data-mce-style="font-size: 10pt;">
-                                   <br>
+                <span style="font-family: Raleway, sans-serif; font-size: 11pt;" data-mce-style="font-family: Raleway, sans-serif; font-size: 11pt;"><strong><span style="font-size: 11pt;" data-mce-style="font-size: 11pt;"><span style="font-size: 11pt;" data-mce-style="font-size: 11pt;">
                     Buscamos pessoas com muita garra, brilho nos olhos e que estejam determinadas</span>&nbsp;
                     </span>a tomar ações que apoiem o sucesso dos nossos clientes, auxiliando no onboarding da nossa 
                     plataforma.</strong>
@@ -71,7 +70,8 @@ export default {
 </script>
 <style>
 .position{
-    background: rgba(49, 72, 90, 0.39);
+    background: rgba(86, 128, 160, 0.39);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
