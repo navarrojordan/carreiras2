@@ -1,56 +1,86 @@
 <template>
+    <section class="main">
+      <img src="..\assets\inse2.png" >
 
-  <!-- <div class="container"> -->
-    <section class="hero is-medium is-link">
+     <apresent/>
+     <apresent2/>
+        <br>      <br>
+        <div class="bem-vindo">
+            <!-- <h1> Nossas Vagas </h1> -->
 
-      <div class="hero-body">
-        <p class="title">
-          MOLDE.ME
-    </p>
-    <br>
-<p class="texts"> A Molde.me, sediada em Jaraguá do Sul, Santa Catarina, foi fundada no início de 2018 com o objetivo de tornar acessível o uso de ferramentas digitais de modelagem e encaixe automático para confecções de todos os tamanhos.
-  <br>   <br>
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="..\assets\vagas.png" alt="Placeholder image" style="padding-right: 0px;border-right-width: 10px;margin-left: 460px; margin-top:15px">
+                </figure>
+              </div>
 
-Nosso propósito é criar soluções incríveis no segmento de modelagem e encaixe automático, ajudando confecções e modelistas a produzirem suas peças com muito mais qualidade, facilidade, precisão e rapidez. 
-Fazemos isso porque acreditamos que a moda é um mercado lucrativo para pessoas criativas, elas só precisam de um pouco de ajuda para criar mais e melhor!
-<br> <br>
-Queremos levar a nossa tecnologia e nossas soluções ao maior número possível de confecções, criadores de moda e modelistas, não importa o tamanho do seu negócio. 
-Fazemos isso através de treinamentos, consultorias e conteúdo em redes sociais e vídeos.
-Nosso sucesso pode ser medido pela satisfação dos nossos usuários que são beneficiados pela solução que desenvolvemos.
+          <div class="media-content">
+            <p class="bem-vindo">Nossas Vagas</p>
+          </div>
+        </div>
 
-      </p> <br><br>
-
-
-  </div>
-  
-</section>
-<!-- </div> -->
+        </div>
+        <p class="content"><b></b> {{ selected }}</p>
+            <b-autocomplete
+                rounded
+                v-model="name"
+                :data="filteredDataArray"
+                placeholder="Encontre a vaga que vai transformar seu futuro!"
+                icon="magnify"
+                clearable
+                @select="option => selected = option">
+                <template #empty>No results found</template>
+            </b-autocomplete>
+         <br>
+    </section>
+   
 </template>
+
 <script>
+import Apresent from './Apresent.vue'
+import Apresent2 from './Apresent2.vue'
+
 export default {
-    name:"Apresent"
-};
+  components: { Apresent, Apresent2 },
+        data() {
+            return {
+                data: [
+                    'Comercial',
+                    'Banco de dados',
+                    'Marketing',
+                    'Vendas',
+                    'Financeiro',
+                    'Recursos Humanos',
+                    'Controladoria',
+                ],
+                name: '',
+                selected: null
+            }
+        },
+        computed: {
+            filteredDataArray() {
+                return this.data.filter((option) => {
+                    return option
+                        .toString()
+                        .toLowerCase()
+                        .indexOf(this.name.toLowerCase()) >= 0
+                })
+            }
+        }
+    }
+    
 </script>
 
 <style>
-.logobranco{
+.bem-vindo{
+  font-size: 56px;
   text-align: center;
-  padding: 10%;
-}
-.title{
-  text-align: center;
- margin: -5%;
- font-family:  'Times New Roman', Times, serif;
-
-}
-.texts{
-  margin-left: auto;
-  margin-right: auto;
-  width: 50em;
-  font-size: 18px;
-  font-weight: 300;
-
-  /* padding: 1%; */
+  font-family: Arial, Helvetica, sans-serif;
+  color:#F25044;
 }
 
+.media{
+    width: center;
+}
 </style>

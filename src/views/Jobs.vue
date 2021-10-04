@@ -53,7 +53,7 @@
 
             <div  class="buttons">
                 <b-button tag="a" type="is-primary" outlined
-                href="HOME"
+                href="Register"
                 target="_blank">
                 Quero fazer parte! 
             </b-button>

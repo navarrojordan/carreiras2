@@ -1,11 +1,25 @@
 <template>
-    <section>
+    <section class="main">
+     <apresent/>
+     <apresent2/>
         <br>      <br>
         <div class="bem-vindo">
-      <h1> Nossas Vagas </h1>
-    </div>
+            <!-- <h1> Nossas Vagas </h1> -->
+
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="..\assets\vagas.png" alt="Placeholder image" style="padding-right: 0px;border-right-width: 10px;margin-left: 460px; margin-top:15px">
+                </figure>
+              </div>
+
+          <div class="media-content">
+            <p class="bem-vindo">Nossas Vagas</p>
+          </div>
+        </div>
+
+        </div>
         <p class="content"><b></b> {{ selected }}</p>
-        <!-- <b-field label="Nossas Vagas"> -->
             <b-autocomplete
                 rounded
                 v-model="name"
@@ -16,14 +30,17 @@
                 @select="option => selected = option">
                 <template #empty>No results found</template>
             </b-autocomplete>
-        <!-- </b-field> -->
          <br>
     </section>
    
 </template>
 
 <script>
-    export default {
+import Apresent from './Apresent.vue'
+import Apresent2 from './Apresent2.vue'
+
+export default {
+  components: { Apresent, Apresent2 },
         data() {
             return {
                 data: [
@@ -57,6 +74,11 @@
 .bem-vindo{
   font-size: 56px;
   text-align: center;
-  font-family:Georgia, 'Times New Roman', serif;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#F25044;
+}
+
+.media{
+    width: center;
 }
 </style>
